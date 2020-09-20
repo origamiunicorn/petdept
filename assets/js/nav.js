@@ -11,14 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < collapsibles.length; i++) {
         M.Collapsible.init(collapsibles[i]);
     }
-    const featureDiscoveries = document.querySelectorAll('.tap-target')
-    for (let i = 0; i < featureDiscoveries.length; i++) {
-        M.FeatureDiscovery.init(featureDiscoveries[i]);
-    }
-    const materialboxes = document.querySelectorAll('.materialboxed')
-    for (let i = 0; i < materialboxes.length; i++) {
-        M.Materialbox.init(materialboxes[i]);
-    }
     const modals = document.querySelectorAll('.modal')
     for (let i = 0; i < modals.length; i++) {
         M.Modal.init(modals[i]);
@@ -30,10 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const scrollspies = document.querySelectorAll('.scrollspy')
     for (let i = 0; i < scrollspies.length; i++) {
         M.ScrollSpy.init(scrollspies[i]);
-    }
-    const tabs = document.querySelectorAll('.tabs')
-    for (let i = 0; i < tabs.length; i++) {
-        M.Tabs.init(tabs[i]);
     }
     const tooltips = document.querySelectorAll('.tooltipped')
     for (let i = 0; i < tooltips.length; i++) {
