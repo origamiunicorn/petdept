@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     const dropdowns = document.querySelectorAll('.dropdown-trigger')
     for (let i = 0; i < dropdowns.length; i++) {
-        M.Dropdown.init(dropdowns[i]);
+        M.Dropdown.init(dropdowns[i], { constrainWidth: false, coverTrigger: false });
     }
     const collapsibles = document.querySelectorAll('.collapsible')
     for (let i = 0; i < collapsibles.length; i++) {
