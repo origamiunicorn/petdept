@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     const sidenavs = document.querySelectorAll('.sidenav')
     for (let i = 0; i < sidenavs.length; i++) {
         M.Sidenav.init(sidenavs[i]);
@@ -27,4 +28,24 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < tooltips.length; i++) {
         M.Tooltip.init(tooltips[i]);
     }
+
+    // Scroll To Top below
+
+    const scrollUp = document.getElementById("scrollUp");
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollUp.style.display = "block";
+        } else {
+            scrollUp.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 });
+
