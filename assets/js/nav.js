@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < collapsibles.length; i++) {
         M.Collapsible.init(collapsibles[i]);
     }
+    const carousel = document.querySelectorAll('.carousel');
+    M.Carousel.init(carousel, {
+        dist: -25,
+        shift: 0,
+        padding: 10,
+        numVisible: 5,
+        fullWidth: false,
+        indicators: false,
+    });
     const modals = document.querySelectorAll('.modal')
     for (let i = 0; i < modals.length; i++) {
         M.Modal.init(modals[i]);
